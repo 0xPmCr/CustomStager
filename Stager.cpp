@@ -21,7 +21,7 @@ DWORD GetFirstUserPID();
 DWORD GetTargetPID();
 
 int main() {
-	// ::ShowWindow(::GetConsoleWindow(), SW_HIDE); // Hide console window, comment it out for debugging
+	 ::ShowWindow(::GetConsoleWindow(), SW_HIDE); // Hide console window, comment it out for debugging
 
 	std::wcout << L"[*] 1. Analyzing environment privileges...\n";
 	DWORD pid = GetTargetPID();
