@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Stager1.vcxproj" Id="2d5e6038-cfd1-44df-b31e-b50a4481ac33" />
+</Solution>
