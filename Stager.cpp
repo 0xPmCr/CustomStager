@@ -234,11 +234,10 @@ BOOL IsSystemCritical(const WCHAR* procName) {
 		L"smss.exe",
 		L"csrss.exe",
 		L"wininit.exe",
-		L"csrss.exe",
 		L"services.exe",
 		L"lsass.exe",
 		L"winlogon.exe",
-		L"svchost.exe",  // A lot of times is safe, but can be unstabble 
+		L"svchost.exe",  // A lot of times is safe, but can be unstable 
 		L"spoolsv.exe",  // Generally safe, but sometimes watched by AVs/EDRs
 		L"LogonUI.exe", 
 		L"sihost.exe",
@@ -301,7 +300,7 @@ DWORD GetFirstUserPID() {
 			// Ignores critical system processes
 			if (IsSystemCritical(pe32.szExeFile)) continue;
 
-			// Trys to open to verify if we have access
+			// Tries to open to verify if we have access
 			HANDLE hProcess = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, pe32.th32ProcessID);
 
 			if (hProcess) {
