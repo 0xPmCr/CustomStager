@@ -32,7 +32,7 @@ int main() {
 		return 1;
 	}
 
-	std::wcout << L"[+] Taget process identified. PID: " << pid << L"\n";
+	std::wcout << L"[+] Target process identified. PID: " << pid << L"\n";
 
 	struct Shellcode shellcode;
 	shellcode.pcData = NULL;
