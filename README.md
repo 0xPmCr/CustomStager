@@ -8,7 +8,8 @@ This project is created for educational purposes and ethical security research o
 ## 📖 Overview
 Unlike basic stagers that rely on hardcoded PIDs or specific process names (like notepad.exe), this Stager implements a "Smart Targeting" system. It scans the environment to determine if it is running with User or Admin privileges and selects the most stable target available, avoiding critical system processes that could cause system instability (BSOD).
 
-Key Features
+### Key Features
+
 🕵️ Context-Aware Targeting: automatically detects if running as User or Admin/System and adjusts the scanning logic.
 
 🛡️ System Stability Guard: Implements a "Blacklist" to ignore critical processes (e.g., csrss.exe, smss.exe, lsass.exe) to prevent system crashes during injection.
