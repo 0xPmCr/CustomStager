@@ -20,7 +20,8 @@ Unlike basic stagers that rely on hardcoded PIDs or specific process names (like
 
 👻 Stealth Mode: Console window hiding capabilities for operation.
 
-⚙️ How It Works
+## ⚙️ How It Works
+
 Reconnaissance: The stager takes a snapshot of running processes (CreateToolhelp32Snapshot).
 
 Filtering: It iterates through the list, discarding unstable system processes and processes it cannot access.
