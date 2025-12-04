@@ -37,7 +37,9 @@ Retrieval: It connects to the defined C2 IP/Domain and downloads the shellcode i
 Execution: The shellcode is injected into the target process memory and executed via a new remote thread.
 
 ## 🚀 Getting Started
-Prerequisites
+
+### Prerequisites
+
 Visual Studio (with "Desktop development with C++" workload).
 
 Sliver C2 (or another C2 framework to generate shellcode).
